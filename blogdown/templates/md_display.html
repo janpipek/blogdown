@@ -18,7 +18,7 @@
       {%- if not loop.first and not loop.last %}, {% endif -%}
       {%- if loop.last and not loop.first %} and {% endif %}
       <a href="{{ link_to('tag', tag=tag) }}">{{ tag }}</a>
-    {%- endfor %}
+    {%- endfor %}.
   {% endif %}
 
   {% if 'disqus' in config.active_modules %}
